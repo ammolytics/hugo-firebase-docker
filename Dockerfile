@@ -3,7 +3,7 @@ FROM ammolytics/firebase-docker:latest
 
 ENV GLIBC_VERSION 2.31-r0
 ENV HUGO_VERSION 0.74.3
-ENV HUGO_BINARY "hugo_extended_$HUGO_VERSION_Linux-64bit.tar.gz"
+ENV HUGO_BINARY hugo_extended_$(HUGO_VERSION)_Linux-64bit.tar.gz
 ENV HUGO_URL "https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/$HUGO_BINARY"
 
 
