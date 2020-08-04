@@ -24,7 +24,7 @@ RUN apk add --no-cache \
 
 RUN wget $(HUGO_URL) \
   && tar xzf $(HUGO_BINARY) \
-  && mv hugo /usr/bin && \
+  && mv hugo /usr/bin \
   && rm LICENSE README.md $(HUGO_BINARY) \
-  && apk del wget ca-certificates && \
+  && apk del wget ca-certificates \
   && hugo version
