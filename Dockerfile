@@ -16,4 +16,5 @@ RUN wget -q "$HUGO_URL" \
   && mv hugo /usr/bin \
   && rm LICENSE README.md ${HUGO_BINARY} \
   && apk del wget ca-certificates \
+  && hugo check \
   && hugo env
